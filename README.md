@@ -6,13 +6,14 @@ dfragon 저장소가 `packages/models/score-engine` submodule로 특정 커밋�
 
 | 파일 | 내용 | SHA256 |
 | --- | --- | --- |
-| `dnfscore.dll` | Windows x64(배포용) | `a17089dc717f10ed86c712270c767bafef6aefe0a60aff9482e090d40d718758` |
-| `libdnfscore.dylib` | macOS arm64(개발 실행용) | `a4c1ee169152ec90058453effa328ab1e48056cb1d5a10e5b440cce0826a284a` |
+| `dnfscore.dll` | Windows x64(배포용) | `ec933638f17d09054855cd1ee7abb3f907e8c7ee4b895443e9c683c905f44b78` |
+| `libdnfscore.dylib` | macOS arm64(개발 실행용) | `6d842f48a9bf7f57b7b6a0e26133fb64fbbce375fd43e79cebdc3e373b7d8ea2` |
 | `dnfscore.h` | C ABI 헤더 | |
 | `VERSION.json` | 엔진 버전, 규칙, 번들 식별자 | |
 
-현재 파일은 엔진 Release `native-v0.2.0`의 자산 `dnfscore-0.2.0-win-x64.dll`, `libdnfscore-0.2.0-darwin-arm64.dylib`을 이름만 바꿔 넣은 것입니다.
-`VERSION.json`은 줄바꿈만 LF로 바꿨습니다.
+현재 파일은 엔진 Release `native-v0.3.0`의 자산 `dnfscore-0.3.0-win-x64.dll`, `libdnfscore-0.3.0-darwin-arm64.dylib`을 이름만 바꿔 넣은 것입니다.
+규칙은 rev14(번들 `phase32-rev14`)입니다.
+`dnfscore.h`, `VERSION.json`은 Release 자산 그대로입니다.
 
 ## 갱신
 
