@@ -3,8 +3,10 @@
  * 모든 문자열은 UTF-8이다. dnfscore_score가 채운 out_json은 dnfscore_free로 해제한다.
  * 반환 0이 성공이고 그 밖은 오류 코드이며 out_json에 {"error":{"code":"...","message":"..."}}를 담는다.
  * 건너뛰기(입력을 해석하지 못함)는 오류가 아니라 성공 결과의 score null, skipped {kind, message}다.
- * 건너뛴 장비점수 결과는 낼 수 있으면 approximate_score(정수), approximate_source, warning에 근사값을 담는다.
- * score는 정확한 점수만 담으며 근사값은 score에 넣지 않는다. 점수를 낸 결과와 버프점수는 세 칸이 모두 null이다.
+ * 건너뛴 결과는 낼 수 있으면 approximate_score(정수), approximate_source, warning에 근사값을 담는다(장비점수, 그리고
+ * 번들에 없는 아바타 레코드나 이름을 기여 0으로 읽은 버프점수).
+ * score는 정확한 점수만 담으며 근사값은 score에 넣지 않는다. 점수를 낸 결과는 approximate_score, approximate_source가 null이고,
+ * warning은 null이거나 정확한 점수에 붙는 알림(버프 효과에 닿지 않는 부위나 버프 강화가 바꾸지 않은 슬롯의 아바타가 번들에 없음)이다.
  * 동시 호출은 지원하지 않는다(준비물 초기화만 잠근다). */
 #ifndef DNFSCORE_H
 #define DNFSCORE_H
