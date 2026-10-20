@@ -1,7 +1,7 @@
 {
-  "package": "dnfscore-native 0.2.0",
-  "rules_rev": "rev12",
-  "bundle_id": "phase31-rev12",
+  "package": "dnfscore-native 0.3.0",
+  "rules_rev": "rev14",
+  "bundle_id": "phase32-rev14",
   "exe_sha256_basis": "b94a50910215864c5f3eaf7b078d768102dfbc53e7b6a2f51f9511ce18cf4a0f",
-  "manifest_sha256": "325696673c475fed47d6ff2ffbcf58244f1d5ee7d213f5aeaec5ff82d7abfcae"
+  "manifest_sha256": "8096d592ac3410bf4f5760f94da5dc82c2c2924a5f64bab6dda85d48671463ea"
 }
