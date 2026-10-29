@@ -31,7 +31,7 @@ extern "C" {
 enum dnfscore_status {
     DNFSCORE_OK = 0,
     DNFSCORE_ERROR_INVALID_JSON = 1,            /* JSON 파싱 실패, 최상위가 객체가 아님 */
-    DNFSCORE_ERROR_MISSING_DOCUMENT = 2,        /* 응답 10개 중 누락, 알 수 없는 문서 이름, status 식별 칸 누락 */
+    DNFSCORE_ERROR_MISSING_DOCUMENT = 2,        /* 계산기가 받지 않는 응답 누락, 알 수 없는 문서 이름, status 식별 칸 누락 */
     DNFSCORE_ERROR_UNSUPPORTED_CALCULATOR = 3,  /* calculator가 "equipment", "buff", "auto"가 아님 */
     DNFSCORE_ERROR_INTERNAL = 4                 /* 블롭 손상, 메모리 부족, 분류되지 않은 내부 오류 */
 };
@@ -39,7 +39,7 @@ enum dnfscore_status {
 /* {"package":"dnfscore-native <버전>","rules_rev":"rev14","bundle_id":"<번들 ID>","manifest_sha256":"<번들 MANIFEST.json sha256>"} 정적 문자열. 해제하지 않는다. */
 DNFSCORE_API const char *dnfscore_version(void);
 
-/* character_json: spec/schema/character.schema.json(Neople 응답 10개와 items) UTF-8, length 바이트.
+/* character_json: spec/schema/character.schema.json(Neople 응답 10개와 items, 계산기가 받는 응답은 생략 가능) UTF-8, length 바이트.
  * calculator: "equipment" | "buff" | "auto"(CLI 규칙: jobName이 버퍼 직업이면 buff). 제품은 equipment 또는 buff를 지정한다.
  * out_json: result.schema.json 필드(approximate_score, approximate_source, warning 포함) + display {role, switchingLevel, buff30, buff50}. */
 DNFSCORE_API int dnfscore_score(const char *character_json, size_t length, const char *calculator, char **out_json);
