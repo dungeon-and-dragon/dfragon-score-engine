@@ -6,14 +6,14 @@ dfragon 저장소가 `packages/models/score-engine` submodule로 특정 커밋�
 
 | 파일 | 내용 | SHA256 |
 | --- | --- | --- |
-| `dnfscore.dll` | Windows x64(배포용) | `70d7a0ef832c88d2ca156913d583ce73d05022ddc9249d9b4d494adc1a7f2e5f` |
+| `dnfscore.dll` | Windows x64(배포용) | `d540909cababa28ff6e803ea0af0f7ccb36608591c5f6babf023032457facc2c` |
 | `libdnfscore.dylib` | macOS arm64(개발 실행용) | `57eb3d437efb3019030ce2dde7d2cb79266091a3fe5cca7f274c63192d0d6c78` |
 | `dnfscore.h` | C ABI 헤더 | |
 | `VERSION.json` | 엔진 버전, 규칙, 번들 식별자 | |
 
-`dnfscore.dll`은 엔진 Release `native-v0.3.2`의 자산 `dnfscore-0.3.2-win-x64.dll`을 이름만 바꿔 넣은 것입니다.
-`libdnfscore.dylib`, `dnfscore.h`, `VERSION.json`은 아직 `native-v0.3.1`의 자산입니다.
-0.3.2의 macOS 자산은 나중에 추가합니다.
+`dnfscore.dll`은 엔진 Release `native-v0.4.0`의 자산 `dnfscore-0.4.0-win-x64.dll`을 이름만 바꿔 넣은 것입니다.
+`dnfscore.h`는 `native-v0.4.0`의 자산이고, `libdnfscore.dylib`, `VERSION.json`은 아직 `native-v0.3.1`의 자산입니다.
+0.4.0의 macOS 자산은 나중에 추가합니다.
 규칙은 rev14(번들 `phase32-rev14b`)입니다.
 `dnfscore.h`, `VERSION.json`은 Release 자산 그대로이며 `VERSION.json`의 버전은 dylib 기준입니다.
 
