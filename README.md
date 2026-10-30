@@ -13,7 +13,7 @@ Desktop의 `score-engine.config.mjs`가 플랫폼별로 위 두 파일만 복사
 C ABI 헤더(`dnfscore.h`)와 버전 정보(`VERSION.json`)는 Desktop이 읽지 않아 두지 않습니다.
 필요하면 엔진 Release 자산이나 엔진 저장소에서 봅니다.
 
-`dnfscore.dll`은 엔진 0.4.2(엔진 저장소 브랜치 `fix/switching-unknown-item`의 `2220abc0`, main merge 전)를 로컬에서 `x86_64-pc-windows-msvc`로 빌드한 것입니다.
+`dnfscore.dll`은 엔진 0.4.2(엔진 저장소 main `483a3fa0`)를 로컬에서 `x86_64-pc-windows-msvc`로 빌드한 것입니다.
 0.4.2는 아직 엔진 Release가 없습니다.
 Windows 엔진의 규칙은 rev14(번들 `phase32-rev14d`)입니다.
 `libdnfscore.dylib`은 아직 `native-v0.3.1`(규칙 rev14, 번들 `phase32-rev14b`)의 자산입니다.
